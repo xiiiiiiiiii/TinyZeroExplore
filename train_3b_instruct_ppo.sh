@@ -12,4 +12,4 @@ export ROLLOUT_TP_SIZE=2
 export EXPERIMENT_NAME=countdown-qwen2.5-3b-instruct
 export VLLM_ATTENTION_BACKEND=XFORMERS
 
-bash ./scripts/train_tiny_zero_a100.sh
+bash ./scripts/train_tiny_zero_a100_ppo.sh
