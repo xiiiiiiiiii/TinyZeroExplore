@@ -7,7 +7,7 @@ ray stop --force && ray start --head # --include-dashboard=True
 
 export N_GPUS=1
 export CUDA_VISIBLE_DEVICES=2
-export BASE_MODEL=Qwen/Qwen2.5-1.5B
+export BASE_MODEL=Qwen/Qwen2.5-0.5B
 export DATA_DIR=data/countdown
 export ROLLOUT_TP_SIZE=1
 export EXPERIMENT_NAME=countdown-qwen2.5-0.5b
