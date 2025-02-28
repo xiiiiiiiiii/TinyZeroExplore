@@ -1,7 +1,7 @@
 export N_GPUS=1
 export CUDA_VISIBLE_DEVICES=0
 
-ray stop --force && ray start --head --num-gpus=2 --port=6379
+ray stop --force && ray start --head
 
 export BASE_MODEL=Qwen/Qwen2.5-1.5B
 export DATA_DIR=data/countdown
