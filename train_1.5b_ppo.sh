@@ -3,13 +3,14 @@
 # alias python3='/home/weiji/anaconda3/envs/zero/bin/python3'
 # alias pip='/home/weiji/anaconda3/envs/zero/bin/pip'
 
+export N_GPUS=1
+export CUDA_VISIBLE_DEVICES=0
+
 ray stop --force && ray start --head --num-gpus=2 --port=6379
 
-export N_GPUS=2
-export CUDA_VISIBLE_DEVICES=2,3
 export BASE_MODEL=Qwen/Qwen2.5-1.5B
 export DATA_DIR=data/countdown
-export ROLLOUT_TP_SIZE=2
+export ROLLOUT_TP_SIZE=1
 export EXPERIMENT_NAME=countdown-qwen2.5-1.5b
 export VLLM_ATTENTION_BACKEND=XFORMERS
 

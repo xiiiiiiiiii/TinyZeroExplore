@@ -3,10 +3,11 @@
 # alias python3='/home/weiji/anaconda3/envs/zero/bin/python3'
 # alias pip='/home/weiji/anaconda3/envs/zero/bin/pip'
 
+export N_GPUS=1
+export CUDA_VISIBLE_DEVICES=0
+
 ray stop --force && ray start --head # --include-dashboard=True
 
-export N_GPUS=1
-export CUDA_VISIBLE_DEVICES=2
 export BASE_MODEL=Qwen/Qwen2.5-0.5B
 export DATA_DIR=data/countdown
 export ROLLOUT_TP_SIZE=1
